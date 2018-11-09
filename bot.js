@@ -10,7 +10,7 @@ setTimeout(() => mohamed.send(`**- Welcome To ,Paranoia .. **`), 2000)
 });
 
 client.on('ready', () => {
-    client.channels.find(c => c.id === '502466870201417749').join();
+    client.channels.find(c => c.id === '507935307543347207').join();
 });
 
 client.login(process.env.BOT_TOKEN)
