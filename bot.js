@@ -1,11 +1,16 @@
 const Discord = require('discord.js'),
-    bot = new Discord.Client({sisableEveryone: true})
+    client = new Discord.Client({sisableEveryone: true})
     console.log("muuuuuuuuute,");
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("507935307543347203");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send(`**- Welcome To ,Paranoia .. **`), 2000)        
 }
 });
-bot.login(process.env.BOT_TOKEN)
+
+client.on('ready', () => {
+    client.channels.find(c => c.id === '502466870201417749').join();
+});
+
+client.login(process.env.BOT_TOKEN)
