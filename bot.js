@@ -9,9 +9,6 @@ setTimeout(() => mohamed.send(`**Benvenuti Òro Server .. ❦ ' ♪' **`), 2000)
 }
 });
 
-client.on('ready', () => {
-    client.channels.find(c => c.id === '484118391578296330').join();
-});
 
 client.login(process.env.BOT_TOKEN)
  
