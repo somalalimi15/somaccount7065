@@ -1,5 +1,5 @@
 const Discord = require('discord.js'),
-var prefix = "15"
+
 
 
 
