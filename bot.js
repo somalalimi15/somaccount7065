@@ -5,7 +5,7 @@ client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("484103117374357534");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send(`**- Welcome To , Òro .. ❦ ' ♪' **`), 2000)        
+setTimeout(() => mohamed.send(`**Benvenuti Òro Server .. ❦ ' ♪' **`), 2000)        
 }
 });
 
