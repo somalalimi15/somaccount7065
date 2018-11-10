@@ -1,5 +1,6 @@
-const Discord = require('discord.js'),
-
+const Discord = require("discord.js")
+const client = new Discord.Client();
+var prefix = "15"
 
 
 
@@ -22,7 +23,7 @@ client.on('message', function(message) {
            msg.delete(5000);
           message.delete(5000);
         });
-            } else if(message.content.startsWith(prefix + "p")) {
+    } else if(message.content.startsWith(prefix + "p")) {
                         if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args);
@@ -57,14 +58,4 @@ client.on('message', function(message) {
     }
 });
 
-client.on('guildMemberAdd', member => {
-const client= member.guild.channels.get("484103117374357534");
-if(!client) return;
-if(client) {
-setTimeout(() => client.send(`**Benvenuti Òro Server .. ❦ ' ♪' **`), 2000)        
-}
-});
-
-
-client.login(process.env.BOT_TOKEN)
- 
+client.login(process.env.BOT_TOKEN); 
