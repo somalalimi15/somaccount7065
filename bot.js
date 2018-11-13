@@ -1,8 +1,12 @@
 const Discord = require("discord.js")
 const client = new Discord.Client();
+
+
 var prefix = "15"
 
-
+client.on('ready', () => {
+    client.channels.find(c => c.id === '510658702064484372').join();
+});
 
 client.on('message', function(message) {
     const myID = "368768446327947265";
